@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
+
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-image: url('./dark.jpeg');
+  background-size: auto;
+}
+
+.clock{
+color: rgb(255, 255, 255);
+font-size: 20px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 20px;
+padding: 1em;
+background-color: rgba(255, 255, 255, 0.2);
+border-radius: 10px;
+backdrop-filter: blur(2px);
+font-family: 'Sulphur Point', sans-serif;
+}
+
+#timer-label{
+  grid-column: span 2;
+  display: grid;
+  justify-content: center;
+  color: white;
+}
+ #break-label, #session-label, #timer-label{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+
+
+ .btns{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    cursor: pointer;
+    color: black;
+ }
+
+ .btns > button:hover{
+  color: white;
+  background-color: rgb(27, 27, 27);
+ }
+
