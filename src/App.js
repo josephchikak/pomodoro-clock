@@ -47,14 +47,6 @@ reset =() =>{
   this.audioBeep.currentTime = 0;
 }
 
-// clockify() {
-//   if (count< 0) return "00:00";
-//   let minutes = Math.floor(count/ 60);
-//   let seconds = count - minutes * 60;
-//   seconds = seconds < 10 ? '0' + seconds : seconds;
-//   minutes = minutes < 10 ? '0' + minutes : minutes;
-//   return minutes + ':' + seconds;
-// }
 
 playPause =()=>{
   if (this.state.timerState === 'play'){
@@ -85,14 +77,6 @@ playPause =()=>{
     }
 
 }
-
-// componentDidMount(){
-//   this.setState({
-//     timerState: 'pause',
-//     currentSess: 'Session',
-//   })
-//   console.log(this.state.timerState)
-// }
 
 componentWillUnmount() {
   clearInterval(this.interval);
